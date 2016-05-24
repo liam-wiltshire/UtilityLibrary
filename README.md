@@ -10,7 +10,7 @@ https://jsfiddle.net/m4mf3qx1/1/
 ```javascript
 // Add a function
 $.fn.foo = function() {
-	// Function here
+	// Functionality here
 }
 
 // Use the function
