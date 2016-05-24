@@ -8,13 +8,12 @@ https://jsfiddle.net/m4mf3qx1/1/
 
 ### Extend
 ```javascript
+// Add a function
 $.fn.foo = function() {
 	// Function here
 }
-```
 
-#### Usage
-```javascript
+// Use the function
 $('.selector').foo();
 ```
 
