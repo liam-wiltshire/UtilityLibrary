@@ -13,6 +13,11 @@ $.fn.foo = function() {
 }
 ```
 
+#### Usage
+```javascript
+$('.selector').foo();
+```
+
 ### Select
 ```javascript
 var elementByClass = $('.selector');
