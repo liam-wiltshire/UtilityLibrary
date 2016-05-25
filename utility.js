@@ -55,6 +55,19 @@
 			}
 
 			return this;
+		},
+
+		// Events
+		on: function(eventType, eventFunction) {
+			for (var i = 0; i < this.length; i++) {
+				this[i].addEventListener(eventType, eventFunction);
+			}
+		},
+
+		off: function(eventType, eventListener) {
+			for (var i = 0; i < this.length; i++) {
+				this[i].removeEventListener(eventType, eventListener);
+			}
 		}
 	}; 
 

@@ -42,3 +42,17 @@ $('.selector').toggle('class');
 ```javascript
 $('.selector').addClass('class').removeClass('class');
 ```
+
+### Events
+```javascript
+
+function bar() {
+	alert('Event has happened');
+}
+
+// Add 
+$('.block').on('eventType', bar);
+
+// Remove
+$('#foo').off('eventType', bar);
+```
