@@ -77,9 +77,6 @@
 		        if (sjax){
 		            sjax.open("GET",url,false);
 		            sjax.send(null);
-			    sjax.onload = function(){
-				$i("updateResponses").innerHTML = dataTool.ticker.responses;
-			    };
 		            return sjax.responseText;
 		        }else{
 		            return false;
