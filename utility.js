@@ -68,7 +68,26 @@
 			for (var i = 0; i < this.length; i++) {
 				this[i].removeEventListener(eventType, eventListener);
 			}
-		}
+		},
+		insertTemplate: function(templateName){
+          		this[0].innerHTML = $.sjaxGet('templates/'+templateName+'.html?1');
+		},
+		sjaxGet: function(url){
+		        sjax = new XMLHttpRequest();
+		        if (sjax){
+		            sjax.open("GET",url,false);
+		            sjax.send(null);
+			    sjax.onload = function(){
+				$i("updateResponses").innerHTML = dataTool.ticker.responses;
+			    };
+		            return sjax.responseText;
+		        }else{
+		            return false;
+		        }
+		    }		
+		
+
+
 	}; 
 
 })(window);
